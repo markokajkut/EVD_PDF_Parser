@@ -1,0 +1,1431 @@
+0
+"1a Code Bestimmungsort
+1b Beförderungsdauer
+1c Veranlassung der Beförderung
+1d Referenzcode (ARC)
+1f Sequenz
+1 - Bestimmung - Steuerlager
+10 Tage
+Eigentümer der Ware
+25DE740000000651225S1
+1
+1e Datum und Uhrzeit der Validierung des e-VD / v-e-VD
+1g Datum und Uhrzeit der Validierung der Änderung
+25.08.2025 16:48:54
+25.08.2025 16:48:54"
+"2 VERSENDER
+3 ORT DER VERSENDUNG
+2a Verbrauchsteuernummer
+3a Verbrauchsteuernummer Steuerlager
+DE00001888552
+DE00001888587
+2b Name
+3b Name
+DACHSER SE
+DACHSER SE
+2c Straße
+2d Hausnummer
+3c Straße
+3d Hausnummer
+THOMAS-DACHSER-STRASSE 2
+THOMAS-DACHSER-STRASSE 4
+2e Postleitzahl
+2f Ort
+2g
+3e Postleitzahl
+3f Ort
+3g
+87439
+KEMPTEN
+de
+90475
+NUERNBERG
+de"
+"5 EMPFÄNGER
+7 ORT DER LIEFERUNG
+5a Verbrauchsteuernummer/UID-Nummer
+7a Verbrauchsteuernummer/UID-Nummer
+ATV2621380001
+ATV2621370012
+5b Name
+7b Name
+DACHSER-AUSTRIA
+DACHSER-AUSTRIA
+5c Straße
+5d Hausnummer
+7c Straße
+7d Hausnummer
+THOMAS-DACHSER-STRASSE 1
+THOMAS-DACHSER-STRASSE 1
+5e Postleitzahl
+5f Ort
+5g
+7e Postleitzahl
+7f Ort
+7g
+4063
+HOERSCHING
+de
+4063
+HOERSCHING
+de"
+"9 e-VD/v-e-VD
+9a Bezugsnummer
+9b Rechnungsnummer
+9c Rechnungsdatum
+1015479
+1015479
+25.08.2025
+9d Kennziffer Ausgangspunkt
+9e Versanddatum
+9f Uhrzeit des Versandes
+9g Vorheriger ARC
+1 - Steuerlager
+25.08.2025
+00:00"
+"10 ZUSTÄNDIGE DIENSTSTELLE FÜR DEN VERSENDER
+11 SICHERHEITSLEISTUNG
+10a Dienststellenschlüsselnummer
+11a Code Sicherheitsleistender
+DE007400
+1 - Versender"
+"13 BEFÖRDERUNG
+13a Code Beförderungsart
+13b Ergänzende Informationen
+13c
+3 - Beförderung auf der Straße"
+"14 VERANLASSER DER BEFÖRDERUNG
+15 ERSTER BEFÖRDERER
+14a Umsatzsteuer-Identifikationsnummer
+15a Umsatzsteuer-Identifikationsnummer
+14b Name
+15b Name
+Moet Hennessy Deutschland GmbH
+14c Straße
+14d Hausnummer
+15c Straße
+15d Hausnummer
+Seidlstr. 23
+14e Postleitzahl
+14f Ort
+14g
+15e Postleitzahl
+15f Ort
+15g
+80335
+München
+de"
+"16 BEFÖRDERUNGSDETAILS
+16a Code Beförderungsmittel
+16b Kennzeichen Beförderungsmittel/Container
+2 - Fahrzeug
+LKW
+16c Kennzeichen des Verschlusses
+16d Informationen zum Verschluss
+16e
+Z77537"
+"17 POSITIONSDATEN e-VD/v-e-VD
+17a Positionsnummer
+17b Verbrauchsteuer-Produktcode
+17c KN-Code
+17d Menge
+Mengeneinheit
+1
+S200
+22086011
+52,500
+Liter (bei 20°C)
+17e Bruttomasse
+17f Nettomasse
+17g Alkoholgehalt
+17h Grad Plato
+17o Dichte
+88,350000
+49,770000
+40,00
+17p Warenbeschreibung
+17q
+VODKA BELVEDERE PURE ORGANIC 1, ,75 ILLUMINATED BIO, 1104568, 0,70 lA pro STUECK, 21,00 lA gesamt
+de"
+"17.1 PACKSTÜCKE
+17.1a Art der Packstücke
+17.1b Anzahl der Packstücke
+17.1c Kennzeichen des Verschlusses
+ST - Tafel, Bogen, Platte
+30"
+"17 POSITIONSDATEN e-VD/v-e-VD
+17a Positionsnummer
+17b Verbrauchsteuer-Produktcode
+17c KN-Code
+17d Menge
+Mengeneinheit
+2
+S200
+22086011
+8,400
+Liter (bei 20°C)
+17e Bruttomasse
+17f Nettomasse
+17g Alkoholgehalt
+17h Grad Plato
+17o Dichte
+14,880000
+7,950000
+40,00
+17p Warenbeschreibung
+17q
+V0DKA BELVEDERE PURE ORGANIC , 0,7L, 1104626, 0,28 lA pro STUECK, 3,36 lA gesamt
+de"
+"17.1 PACKSTÜCKE
+17.1a Art der Packstücke
+17.1b Anzahl der Packstücke
+17.1c Kennzeichen des Verschlusses
+ST - Tafel, Bogen, Platte
+12"
+"17 POSITIONSDATEN e-VD/v-e-VD
+17a Positionsnummer
+17b Verbrauchsteuer-Produktcode
+17c KN-Code
+17d Menge
+Mengeneinheit
+3
+S200
+22086011
+58,800
+Liter (bei 20°C)
+17e Bruttomasse
+17f Nettomasse
+17g Alkoholgehalt
+17h Grad Plato
+17o Dichte
+107,240000
+55,770000
+40,00
+17p Warenbeschreibung
+17q
+BIO VODKA BELVEDERE PURE ORGAN, IC VE6 0,7L, 1104541, 0,28 lA pro FLASCHE, 23,52 lA gesamt
+de"
+"17.1 PACKSTÜCKE
+17.1a Art der Packstücke
+17.1b Anzahl der Packstücke
+17.1c Kennzeichen des Verschlusses
+BO - Flasche, ungeschützt, zylindrisch
+84"
+"17 POSITIONSDATEN e-VD/v-e-VD
+17a Positionsnummer
+17b Verbrauchsteuer-Produktcode
+17c KN-Code
+17d Menge
+Mengeneinheit
+4
+S200
+22086011
+10,500
+Liter (bei 20°C)
+17e Bruttomasse
+17f Nettomasse
+17g Alkoholgehalt
+17h Grad Plato
+17o Dichte
+17,670000
+9,950000
+40,00
+17p Warenbeschreibung
+17q
+VODKA BELVEDERE PURE ORGANIC 1, ,75 ILLUMINATED BIO, 1104568, 0,70 lA pro STUECK, 4,20 lA gesamt
+de"
+"17.1 PACKSTÜCKE
+17.1a Art der Packstücke
+17.1b Anzahl der Packstücke
+17.1c Kennzeichen des Verschlusses
+ST - Tafel, Bogen, Platte
+6"
+"17 POSITIONSDATEN e-VD/v-e-VD
+17a Positionsnummer
+17b Verbrauchsteuer-Produktcode
+17c KN-Code
+17d Menge
+Mengeneinheit
+5
+S200
+22082012
+4,200
+Liter (bei 20°C)
+17e Bruttomasse
+17f Nettomasse
+17g Alkoholgehalt
+17h Grad Plato
+17o Dichte
+7,900000
+3,990000
+40,00"
+"17p Warenbeschreibung
+17q
+COGNAC HENNESSY VS40 0,7L WOOD, EN BOX, 1104077, 0,28 lA pro STUECK, 1,68 lA gesamt
+de"
+"17.1 PACKSTÜCKE
+17.1a Art der Packstücke
+17.1b Anzahl der Packstücke
+17.1c Kennzeichen des Verschlusses
+ST - Tafel, Bogen, Platte
+6"
+"17 POSITIONSDATEN e-VD/v-e-VD
+17a Positionsnummer
+17b Verbrauchsteuer-Produktcode
+17c KN-Code
+17d Menge
+Mengeneinheit
+6
+S200
+22082012
+1,400
+Liter (bei 20°C)
+17e Bruttomasse
+17f Nettomasse
+17g Alkoholgehalt
+17h Grad Plato
+17o Dichte
+2,630000
+1,330000
+40,00
+17p Warenbeschreibung
+17q
+COGNAC HENNESSY VS40 0,7L WOOD, EN BOX, 1104077, 0,28 lA pro STUECK, 0,56 lA gesamt
+de"
+"17.1 PACKSTÜCKE
+17.1a Art der Packstücke
+17.1b Anzahl der Packstücke
+17.1c Kennzeichen des Verschlusses
+ST - Tafel, Bogen, Platte
+2"
+"17 POSITIONSDATEN e-VD/v-e-VD
+17a Positionsnummer
+17b Verbrauchsteuer-Produktcode
+17c KN-Code
+17d Menge
+Mengeneinheit
+7
+W300
+22041011
+22,500
+Liter (bei 20°C)
+17e Bruttomasse
+17f Nettomasse
+17g Alkoholgehalt
+17h Grad Plato
+17o Dichte
+51,600000
+22,350000
+12,50
+17p Warenbeschreibung
+17q
+CHAMPAGNE RUINARTROSE VE6X, 75CL, 1065635
+de"
+"17.1 PACKSTÜCKE
+17.1a Art der Packstücke
+17.1b Anzahl der Packstücke
+17.1c Kennzeichen des Verschlusses
+BO - Flasche, ungeschützt, zylindrisch
+30"
+"17 POSITIONSDATEN e-VD/v-e-VD
+17a Positionsnummer
+17b Verbrauchsteuer-Produktcode
+17c KN-Code
+17d Menge
+Mengeneinheit
+8
+W300
+22041011
+9,000
+Liter (bei 20°C)
+17e Bruttomasse
+17f Nettomasse
+17g Alkoholgehalt
+17h Grad Plato
+17o Dichte
+21,040000
+8,940000
+12,50
+17p Warenbeschreibung
+17q
+CHAMPAGNE RUINARTBLANC DE, BLANCS VE3X 1,5LMAGNUM, 1065913
+de"
+"17.1 PACKSTÜCKE
+17.1a Art der Packstücke
+17.1b Anzahl der Packstücke
+17.1c Kennzeichen des Verschlusses
+BO - Flasche, ungeschützt, zylindrisch
+6"
+"17 POSITIONSDATEN e-VD/v-e-VD
+17a Positionsnummer
+17b Verbrauchsteuer-Produktcode
+17c KN-Code
+17d Menge
+Mengeneinheit
+9
+W300
+22041011
+9,000
+Liter (bei 20°C)
+17e Bruttomasse
+17f Nettomasse
+17g Alkoholgehalt
+17h Grad Plato
+17o Dichte
+20,780000
+8,940000
+12,50
+17p Warenbeschreibung
+17q
+CHAMPAGNE MOET & CHANDON MOET , IMPERIAL 1,5L, 1106393
+de"
+"17.1 PACKSTÜCKE
+17.1a Art der Packstücke
+17.1b Anzahl der Packstücke
+17.1c Kennzeichen des Verschlusses
+BO - Flasche, ungeschützt, zylindrisch
+6"
+"17 POSITIONSDATEN e-VD/v-e-VD
+17a Positionsnummer
+17b Verbrauchsteuer-Produktcode
+17c KN-Code
+17d Menge
+Mengeneinheit
+10
+W300
+22041011
+3,000
+Liter (bei 20°C)
+17e Bruttomasse
+17f Nettomasse
+17g Alkoholgehalt
+17h Grad Plato
+17o Dichte
+7,920000
+2,980000
+12,50
+17p Warenbeschreibung
+17q
+CHAMPAGNE MOET & CHANDON MOET , IMPERIAL 3L WOODEN BOX, 1107383
+de"
+"17.1 PACKSTÜCKE
+17.1a Art der Packstücke
+17.1b Anzahl der Packstücke
+17.1c Kennzeichen des Verschlusses
+BO - Flasche, ungeschützt, zylindrisch
+1"
+"17 POSITIONSDATEN e-VD/v-e-VD
+17a Positionsnummer
+17b Verbrauchsteuer-Produktcode
+17c KN-Code
+17d Menge
+Mengeneinheit
+11
+W300
+22041011
+4,500
+Liter (bei 20°C)
+17e Bruttomasse
+17f Nettomasse
+17g Alkoholgehalt
+17h Grad Plato
+17o Dichte
+10,780000
+4,470000
+12,50
+17p Warenbeschreibung
+17q
+CHAMPAGNE RUINART ROSE VE3 6X0, ,75 BOX SECOND SKIN, 1085645
+de"
+"17.1 PACKSTÜCKE
+17.1a Art der Packstücke
+17.1b Anzahl der Packstücke
+17.1c Kennzeichen des Verschlusses
+ST - Tafel, Bogen, Platte
+6"
+"17 POSITIONSDATEN e-VD/v-e-VD
+17a Positionsnummer
+17b Verbrauchsteuer-Produktcode
+17c KN-Code
+17d Menge
+Mengeneinheit
+12
+W300
+22041011
+3,000
+Liter (bei 20°C)
+17e Bruttomasse
+17f Nettomasse
+17g Alkoholgehalt
+17h Grad Plato
+17o Dichte
+6,820000
+2,980000
+12,50
+17p Warenbeschreibung
+17q
+CHAMPAGNE VEUVE CLICQUOT ROSE , 1,5L, 1107463
+de"
+"17.1 PACKSTÜCKE
+17.1a Art der Packstücke
+17.1b Anzahl der Packstücke
+17.1c Kennzeichen des Verschlusses
+BO - Flasche, ungeschützt, zylindrisch
+2"
+"17 POSITIONSDATEN e-VD/v-e-VD
+17a Positionsnummer
+17b Verbrauchsteuer-Produktcode
+17c KN-Code
+17d Menge
+Mengeneinheit
+13
+W300
+22041011
+54,000
+Liter (bei 20°C)
+17e Bruttomasse
+17f Nettomasse
+17g Alkoholgehalt
+17h Grad Plato
+17o Dichte
+123,840000
+53,640000
+12,50
+17p Warenbeschreibung
+17q
+CHAMPAGNE RUINARTROSE VE6X, 75CL, 1065635
+de"
+"17.1 PACKSTÜCKE
+17.1a Art der Packstücke
+17.1b Anzahl der Packstücke
+17.1c Kennzeichen des Verschlusses
+BO - Flasche, ungeschützt, zylindrisch
+72"
+"17 POSITIONSDATEN e-VD/v-e-VD
+17a Positionsnummer
+17b Verbrauchsteuer-Produktcode
+17c KN-Code
+17d Menge
+Mengeneinheit
+14
+W300
+22051010
+22,500
+Liter (bei 20°C)
+17e Bruttomasse
+17f Nettomasse
+17g Alkoholgehalt
+17h Grad Plato
+17o Dichte
+45,900000
+22,500000
+11,50
+17p Warenbeschreibung
+17q
+SPARKLING WINE CHANDON GARDEN , SPRITZ VE 6X0,75L, 1093704
+de"
+"17.1 PACKSTÜCKE
+17.1a Art der Packstücke
+17.1b Anzahl der Packstücke
+17.1c Kennzeichen des Verschlusses
+BO - Flasche, ungeschützt, zylindrisch
+30"
+"17 POSITIONSDATEN e-VD/v-e-VD
+17a Positionsnummer
+17b Verbrauchsteuer-Produktcode
+17c KN-Code
+17d Menge
+Mengeneinheit
+15
+W300
+22041011
+13,500
+Liter (bei 20°C)
+17e Bruttomasse
+17f Nettomasse
+17g Alkoholgehalt
+17h Grad Plato
+17o Dichte
+30,300000
+13,410000
+12,50
+17p Warenbeschreibung
+17q
+CHAMPAGNE VEUVE CLICQUOT ROSE , VE 6X0,75L, 1100502
+de"
+"17.1 PACKSTÜCKE
+17.1a Art der Packstücke
+17.1b Anzahl der Packstücke
+17.1c Kennzeichen des Verschlusses
+BO - Flasche, ungeschützt, zylindrisch
+18"
+"17 POSITIONSDATEN e-VD/v-e-VD
+17a Positionsnummer
+17b Verbrauchsteuer-Produktcode
+17c KN-Code
+17d Menge
+Mengeneinheit
+16
+W300
+22041011
+4,500
+Liter (bei 20°C)
+17e Bruttomasse
+17f Nettomasse
+17g Alkoholgehalt
+17h Grad Plato
+17o Dichte
+10,460000
+4,470000
+12,50
+17p Warenbeschreibung
+17q
+CHAMPAGNE VEUVE CLICQUOT BRUT , VE 6X0,75L ECO YELLOW BOX, 1101853
+de"
+"17.1 PACKSTÜCKE
+17.1a Art der Packstücke
+17.1b Anzahl der Packstücke
+17.1c Kennzeichen des Verschlusses
+ST - Tafel, Bogen, Platte
+6"
+"17 POSITIONSDATEN e-VD/v-e-VD
+17a Positionsnummer
+17b Verbrauchsteuer-Produktcode
+17c KN-Code
+17d Menge
+Mengeneinheit
+17
+W300
+22041011
+76,500
+Liter (bei 20°C)
+17e Bruttomasse
+17f Nettomasse
+17g Alkoholgehalt
+17h Grad Plato
+17o Dichte
+168,470000
+76,090000
+12,50
+17p Warenbeschreibung
+17q
+CHAMPAGNE MOET & CHANDON ROSE , IMPERIAL 0,75L, 1101890
+de"
+"17.1 PACKSTÜCKE
+17.1a Art der Packstücke
+17.1b Anzahl der Packstücke
+17.1c Kennzeichen des Verschlusses
+BO - Flasche, ungeschützt, zylindrisch
+102"
+"17 POSITIONSDATEN e-VD/v-e-VD
+17a Positionsnummer
+17b Verbrauchsteuer-Produktcode
+17c KN-Code
+17d Menge
+Mengeneinheit
+18
+W300
+22051010
+4,500
+Liter (bei 20°C)
+17e Bruttomasse
+17f Nettomasse
+17g Alkoholgehalt
+17h Grad Plato
+17o Dichte
+9,180000
+4,500000
+11,50
+17p Warenbeschreibung
+17q
+SPARKLING WINE CHANDON GARDEN , SPRITZ VE 6X0,75L, 1093704
+de"
+"17.1 PACKSTÜCKE
+17.1a Art der Packstücke
+17.1b Anzahl der Packstücke
+17.1c Kennzeichen des Verschlusses
+BO - Flasche, ungeschützt, zylindrisch
+6"
+"17 POSITIONSDATEN e-VD/v-e-VD
+17a Positionsnummer
+17b Verbrauchsteuer-Produktcode
+17c KN-Code
+17d Menge
+Mengeneinheit
+19
+W300
+22041011
+31,500
+Liter (bei 20°C)
+17e Bruttomasse
+17f Nettomasse
+17g Alkoholgehalt
+17h Grad Plato
+17o Dichte
+69,370000
+31,750000
+12,50
+17p Warenbeschreibung
+17q
+CHAMPAGNE MOET & CHANDON ICE I, MPERIAL 0,75L, 1102183
+de"
+"17.1 PACKSTÜCKE
+17.1a Art der Packstücke
+17.1b Anzahl der Packstücke
+17.1c Kennzeichen des Verschlusses
+BO - Flasche, ungeschützt, zylindrisch
+42"
+"17 POSITIONSDATEN e-VD/v-e-VD
+17a Positionsnummer
+17b Verbrauchsteuer-Produktcode
+17c KN-Code
+17d Menge
+Mengeneinheit
+20
+W300
+22041011
+19,200
+Liter (bei 20°C)
+17e Bruttomasse
+17f Nettomasse
+17g Alkoholgehalt
+17h Grad Plato
+17o Dichte
+43,440000
+19,100000
+12,50
+17p Warenbeschreibung
+17q
+CHAMPAGNE MOET & CHANDON MOET , IMPERIAL 0,2L, 1106325
+de"
+"17.1 PACKSTÜCKE
+17.1a Art der Packstücke
+17.1b Anzahl der Packstücke
+17.1c Kennzeichen des Verschlusses
+BO - Flasche, ungeschützt, zylindrisch
+96"
+"17 POSITIONSDATEN e-VD/v-e-VD
+17a Positionsnummer
+17b Verbrauchsteuer-Produktcode
+17c KN-Code
+17d Menge
+Mengeneinheit
+21
+W300
+22041011
+18,000
+Liter (bei 20°C)
+17e Bruttomasse
+17f Nettomasse
+17g Alkoholgehalt
+17h Grad Plato
+17o Dichte
+46,800000
+17,880000
+12,00
+17p Warenbeschreibung
+17q
+CHAMPAGNE MOET & CHANDONNECTAR, IMP ROSE DRY VE1X 3LHOLZKISTE , 1072185
+de"
+"17.1 PACKSTÜCKE
+17.1a Art der Packstücke
+17.1b Anzahl der Packstücke
+17.1c Kennzeichen des Verschlusses
+BO - Flasche, ungeschützt, zylindrisch
+6"
+"17 POSITIONSDATEN e-VD/v-e-VD
+17a Positionsnummer
+17b Verbrauchsteuer-Produktcode
+17c KN-Code
+17d Menge
+Mengeneinheit
+22
+W300
+22051010
+24,000
+Liter (bei 20°C)
+17e Bruttomasse
+17f Nettomasse
+17g Alkoholgehalt
+17h Grad Plato
+17o Dichte
+54,400000
+24,000000
+11,50
+17p Warenbeschreibung
+17q
+SPARKLING WINE CHANDON GARDEN , SPRITZ VE 4X1,5L, 1093703
+de"
+"17.1 PACKSTÜCKE
+17.1a Art der Packstücke
+17.1b Anzahl der Packstücke
+17.1c Kennzeichen des Verschlusses
+BO - Flasche, ungeschützt, zylindrisch
+16"
+"17 POSITIONSDATEN e-VD/v-e-VD
+17a Positionsnummer
+17b Verbrauchsteuer-Produktcode
+17c KN-Code
+17d Menge
+Mengeneinheit
+23
+W300
+22051010
+171,000
+Liter (bei 20°C)
+17e Bruttomasse
+17f Nettomasse
+17g Alkoholgehalt
+17h Grad Plato
+17o Dichte
+348,840000
+171,000000
+11,50
+17p Warenbeschreibung
+17q
+SPARKLING WINE CHANDON GARDEN , SPRITZ VE 6X0,75L, 1093704
+de"
+"17.1 PACKSTÜCKE
+17.1a Art der Packstücke
+17.1b Anzahl der Packstücke
+17.1c Kennzeichen des Verschlusses
+BO - Flasche, ungeschützt, zylindrisch
+228"
+"17 POSITIONSDATEN e-VD/v-e-VD
+17a Positionsnummer
+17b Verbrauchsteuer-Produktcode
+17c KN-Code
+17d Menge
+Mengeneinheit
+24
+W300
+22041011
+22,500
+Liter (bei 20°C)
+17e Bruttomasse
+17f Nettomasse
+17g Alkoholgehalt
+17h Grad Plato
+17o Dichte
+54,880000
+22,350000
+12,50"
+"17p Warenbeschreibung
+17q
+CHAMPAGNE DOM PERIGNON VINTAGE, 2013 0,75L LUMINOUS, 1094413
+de"
+"17.1 PACKSTÜCKE
+17.1a Art der Packstücke
+17.1b Anzahl der Packstücke
+17.1c Kennzeichen des Verschlusses
+BO - Flasche, ungeschützt, zylindrisch
+30"
+"17 POSITIONSDATEN e-VD/v-e-VD
+17a Positionsnummer
+17b Verbrauchsteuer-Produktcode
+17c KN-Code
+17d Menge
+Mengeneinheit
+25
+W300
+22041011
+9,000
+Liter (bei 20°C)
+17e Bruttomasse
+17f Nettomasse
+17g Alkoholgehalt
+17h Grad Plato
+17o Dichte
+28,840000
+8,940000
+12,50
+17p Warenbeschreibung
+17q
+CHAMPAGNE RUINART ROSE VE 1X3L, HOLZBOX, 1101379
+de"
+"17.1 PACKSTÜCKE
+17.1a Art der Packstücke
+17.1b Anzahl der Packstücke
+17.1c Kennzeichen des Verschlusses
+BO - Flasche, ungeschützt, zylindrisch
+3"
+"17 POSITIONSDATEN e-VD/v-e-VD
+17a Positionsnummer
+17b Verbrauchsteuer-Produktcode
+17c KN-Code
+17d Menge
+Mengeneinheit
+26
+W300
+22041011
+76,500
+Liter (bei 20°C)
+17e Bruttomasse
+17f Nettomasse
+17g Alkoholgehalt
+17h Grad Plato
+17o Dichte
+168,470000
+76,090000
+12,50
+17p Warenbeschreibung
+17q
+CHAMPAGNE MOET & CHANDON ROSE , IMPERIAL 0,75L, 1101890
+de"
+"17.1 PACKSTÜCKE
+17.1a Art der Packstücke
+17.1b Anzahl der Packstücke
+17.1c Kennzeichen des Verschlusses
+BO - Flasche, ungeschützt, zylindrisch
+102"
+"17 POSITIONSDATEN e-VD/v-e-VD
+17a Positionsnummer
+17b Verbrauchsteuer-Produktcode
+17c KN-Code
+17d Menge
+Mengeneinheit
+27
+W300
+22041011
+27,000
+Liter (bei 20°C)
+17e Bruttomasse
+17f Nettomasse
+17g Alkoholgehalt
+17h Grad Plato
+17o Dichte
+62,340000
+27,210000
+12,50
+17p Warenbeschreibung
+17q
+CHAMPAGNE MOET & CHANDON ICE I, MPERIAL 1,5L, 1106735
+de"
+"17.1 PACKSTÜCKE
+17.1a Art der Packstücke
+17.1b Anzahl der Packstücke
+17.1c Kennzeichen des Verschlusses
+BO - Flasche, ungeschützt, zylindrisch
+18"
+"17 POSITIONSDATEN e-VD/v-e-VD
+17a Positionsnummer
+17b Verbrauchsteuer-Produktcode
+17c KN-Code
+17d Menge
+Mengeneinheit
+28
+W300
+22041011
+9,000
+Liter (bei 20°C)
+17e Bruttomasse
+17f Nettomasse
+17g Alkoholgehalt
+17h Grad Plato
+17o Dichte
+20,640000
+8,940000
+12,50
+17p Warenbeschreibung
+17q
+CHAMPAGNE RUINARTROSE VE6X, 75CL, 1065635
+de"
+"17.1 PACKSTÜCKE
+17.1a Art der Packstücke
+17.1b Anzahl der Packstücke
+17.1c Kennzeichen des Verschlusses
+BO - Flasche, ungeschützt, zylindrisch
+12"
+"17 POSITIONSDATEN e-VD/v-e-VD
+17a Positionsnummer
+17b Verbrauchsteuer-Produktcode
+17c KN-Code
+17d Menge
+Mengeneinheit
+29
+W300
+22041011
+4,500
+Liter (bei 20°C)
+17e Bruttomasse
+17f Nettomasse
+17g Alkoholgehalt
+17h Grad Plato
+17o Dichte
+11,480000
+4,470000
+12,50
+17p Warenbeschreibung
+17q
+CHAMPAGNE RUINART ROSE VE12 X , 37,5 CL, 1076532
+de"
+"17.1 PACKSTÜCKE
+17.1a Art der Packstücke
+17.1b Anzahl der Packstücke
+17.1c Kennzeichen des Verschlusses
+BO - Flasche, ungeschützt, zylindrisch
+12"
+"17 POSITIONSDATEN e-VD/v-e-VD
+17a Positionsnummer
+17b Verbrauchsteuer-Produktcode
+17c KN-Code
+17d Menge
+Mengeneinheit
+30
+W300
+22041011
+9,000
+Liter (bei 20°C)
+17e Bruttomasse
+17f Nettomasse
+17g Alkoholgehalt
+17h Grad Plato
+17o Dichte
+21,760000
+8,940000
+12,50
+17p Warenbeschreibung
+17q
+CHAMPAGNE RUINART BLANC DE BLA, NCS 6X0,75L BOX SECOND SKI, 1085564
+de"
+"17.1 PACKSTÜCKE
+17.1a Art der Packstücke
+17.1b Anzahl der Packstücke
+17.1c Kennzeichen des Verschlusses
+ST - Tafel, Bogen, Platte
+12"
+"17 POSITIONSDATEN e-VD/v-e-VD
+17a Positionsnummer
+17b Verbrauchsteuer-Produktcode
+17c KN-Code
+17d Menge
+Mengeneinheit
+31
+W300
+22041011
+3,000
+Liter (bei 20°C)
+17e Bruttomasse
+17f Nettomasse
+17g Alkoholgehalt
+17h Grad Plato
+17o Dichte
+9,340000
+2,980000
+12,50
+17p Warenbeschreibung
+17q
+CHAMPAGNE RUINART BLANC DE BLA, NCS DE 1X3L HOLZBOX, 1101372
+de"
+"17.1 PACKSTÜCKE
+17.1a Art der Packstücke
+17.1b Anzahl der Packstücke
+17.1c Kennzeichen des Verschlusses
+BO - Flasche, ungeschützt, zylindrisch
+1"
+"17 POSITIONSDATEN e-VD/v-e-VD
+17a Positionsnummer
+17b Verbrauchsteuer-Produktcode
+17c KN-Code
+17d Menge
+Mengeneinheit
+32
+W300
+22041011
+9,000
+Liter (bei 20°C)
+17e Bruttomasse
+17f Nettomasse
+17g Alkoholgehalt
+17h Grad Plato
+17o Dichte
+19,820000
+9,070000
+12,50
+17p Warenbeschreibung
+17q
+CHAMPAGNE MOET & CHANDON ICE R, OSE 0,75L, 1102169
+de"
+"17.1 PACKSTÜCKE
+17.1a Art der Packstücke
+17.1b Anzahl der Packstücke
+17.1c Kennzeichen des Verschlusses
+BO - Flasche, ungeschützt, zylindrisch
+12"
+"17 POSITIONSDATEN e-VD/v-e-VD
+17a Positionsnummer
+17b Verbrauchsteuer-Produktcode
+17c KN-Code
+17d Menge
+Mengeneinheit
+33
+W300
+22041011
+9,000
+Liter (bei 20°C)
+17e Bruttomasse
+17f Nettomasse
+17g Alkoholgehalt
+17h Grad Plato
+17o Dichte
+19,820000
+9,070000
+12,50
+17p Warenbeschreibung
+17q
+CHAMPAGNE MOET & CHANDON ICE I, MPERIAL 0,75L, 1102183
+de"
+"17.1 PACKSTÜCKE
+17.1a Art der Packstücke
+17.1b Anzahl der Packstücke
+17.1c Kennzeichen des Verschlusses
+BO - Flasche, ungeschützt, zylindrisch
+12"
+"17 POSITIONSDATEN e-VD/v-e-VD
+17a Positionsnummer
+17b Verbrauchsteuer-Produktcode
+17c KN-Code
+17d Menge
+Mengeneinheit
+34
+W300
+22041011
+4,500
+Liter (bei 20°C)
+17e Bruttomasse
+17f Nettomasse
+17g Alkoholgehalt
+17h Grad Plato
+17o Dichte
+10,460000
+4,470000
+12,50
+17p Warenbeschreibung
+17q
+CHAMPAGNE DOM PERIGNON VINTAGE, 2015 0,75L, 1105149
+de"
+"17.1 PACKSTÜCKE
+17.1a Art der Packstücke
+17.1b Anzahl der Packstücke
+17.1c Kennzeichen des Verschlusses
+BO - Flasche, ungeschützt, zylindrisch
+6"
+"17 POSITIONSDATEN e-VD/v-e-VD
+17a Positionsnummer
+17b Verbrauchsteuer-Produktcode
+17c KN-Code
+17d Menge
+Mengeneinheit
+35
+W200
+22042195
+22,500
+Liter (bei 20°C)
+17e Bruttomasse
+17f Nettomasse
+17g Alkoholgehalt
+17h Grad Plato
+17o Dichte
+41,500000
+22,320000
+13,50
+17p Warenbeschreibung
+17q
+WEISSWEIN CLOUDY BAY SAUV BLAN, C 2024 VE 6 X 0,75L, 1110174
+de"
+"17.1 PACKSTÜCKE
+17.1a Art der Packstücke
+17.1b Anzahl der Packstücke
+17.1c Kennzeichen des Verschlusses
+BO - Flasche, ungeschützt, zylindrisch
+30"
+"17 POSITIONSDATEN e-VD/v-e-VD
+17a Positionsnummer
+17b Verbrauchsteuer-Produktcode
+17c KN-Code
+17d Menge
+Mengeneinheit
+36
+W200
+22042178
+18,000
+Liter (bei 20°C)
+17e Bruttomasse
+17f Nettomasse
+17g Alkoholgehalt
+17h Grad Plato
+17o Dichte
+37,440000
+18,000000
+13,00
+17p Warenbeschreibung
+17q
+ROSEWEIN MINUTY M 2024 0,75L , , 1111793
+de"
+"17.1 PACKSTÜCKE
+17.1a Art der Packstücke
+17.1b Anzahl der Packstücke
+17.1c Kennzeichen des Verschlusses
+BO - Flasche, ungeschützt, zylindrisch
+24"
+"17 POSITIONSDATEN e-VD/v-e-VD
+17a Positionsnummer
+17b Verbrauchsteuer-Produktcode
+17c KN-Code
+17d Menge
+Mengeneinheit
+37
+W200
+22042178
+4,500
+Liter (bei 20°C)
+17e Bruttomasse
+17f Nettomasse
+17g Alkoholgehalt
+17h Grad Plato
+17o Dichte
+8,100000
+4,500000
+13,00
+17p Warenbeschreibung
+17q
+ROSEWEIN CHATEAU D'ESCLANS WHI, SPERING ANGEL 2024 1,5L, 1111196
+de"
+"17.1 PACKSTÜCKE
+17.1a Art der Packstücke
+17.1b Anzahl der Packstücke
+17.1c Kennzeichen des Verschlusses
+BO - Flasche, ungeschützt, zylindrisch
+3"
+"17 POSITIONSDATEN e-VD/v-e-VD
+17a Positionsnummer
+17b Verbrauchsteuer-Produktcode
+17c KN-Code
+17d Menge
+Mengeneinheit
+38
+W200
+22042178
+18,000
+Liter (bei 20°C)
+17e Bruttomasse
+17f Nettomasse
+17g Alkoholgehalt
+17h Grad Plato
+17o Dichte
+37,440000
+18,000000
+13,00
+17p Warenbeschreibung
+17q
+ROSEWEIN MINUTY M 2024 0,75L , , 1111793
+de"
+"17.1 PACKSTÜCKE
+17.1a Art der Packstücke
+17.1b Anzahl der Packstücke
+17.1c Kennzeichen des Verschlusses
+BO - Flasche, ungeschützt, zylindrisch
+24"
+"17 POSITIONSDATEN e-VD/v-e-VD
+17a Positionsnummer
+17b Verbrauchsteuer-Produktcode
+17c KN-Code
+17d Menge
+Mengeneinheit
+39
+W200
+22042178
+4,500
+Liter (bei 20°C)
+17e Bruttomasse
+17f Nettomasse
+17g Alkoholgehalt
+17h Grad Plato
+17o Dichte
+7,900000
+4,500000
+12,50
+17p Warenbeschreibung
+17q
+ROSEWEIN MINUTY 281 2023 1,5L , , 1106193
+de"
+"17.1 PACKSTÜCKE
+17.1a Art der Packstücke
+17.1b Anzahl der Packstücke
+17.1c Kennzeichen des Verschlusses
+BO - Flasche, ungeschützt, zylindrisch
+3"
+"17 POSITIONSDATEN e-VD/v-e-VD
+17a Positionsnummer
+17b Verbrauchsteuer-Produktcode
+17c KN-Code
+17d Menge
+Mengeneinheit
+40
+W200
+22042178
+12,000
+Liter (bei 20°C)
+17e Bruttomasse
+17f Nettomasse
+17g Alkoholgehalt
+17h Grad Plato
+17o Dichte
+22,400000
+12,000000
+13,00
+17p Warenbeschreibung
+17q
+ROSEWEIN CHATEAU D'ESCLANS WHI, SPERING ANGEL 2024 0,75L, 1111173
+de"
+"17.1 PACKSTÜCKE
+17.1a Art der Packstücke
+17.1b Anzahl der Packstücke
+17.1c Kennzeichen des Verschlusses
+BO - Flasche, ungeschützt, zylindrisch
+16"
+"17 POSITIONSDATEN e-VD/v-e-VD
+17a Positionsnummer
+17b Verbrauchsteuer-Produktcode
+17c KN-Code
+17d Menge
+Mengeneinheit
+41
+W200
+22042178
+54,000
+Liter (bei 20°C)
+17e Bruttomasse
+17f Nettomasse
+17g Alkoholgehalt
+17h Grad Plato
+17o Dichte
+121,440000
+54,000000
+14,00
+17p Warenbeschreibung
+17q
+ROSEWEIN CHATEAU D'ESCLANS 202, 4 0,75L FRANKREICH, 1114676
+de"
+"17.1 PACKSTÜCKE
+17.1a Art der Packstücke
+17.1b Anzahl der Packstücke
+17.1c Kennzeichen des Verschlusses
+BO - Flasche, ungeschützt, zylindrisch
+72"
+"17 POSITIONSDATEN e-VD/v-e-VD
+17a Positionsnummer
+17b Verbrauchsteuer-Produktcode
+17c KN-Code
+17d Menge
+Mengeneinheit
+42
+W200
+22042178
+18,000
+Liter (bei 20°C)
+17e Bruttomasse
+17f Nettomasse
+17g Alkoholgehalt
+17h Grad Plato
+17o Dichte
+31,680000
+18,000000
+12,50
+17p Warenbeschreibung
+17q
+ROSEWEIN CHATEAU D'ESCLANS THE, PALE BY SACHA LICHINE 2024 VE , 1111143
+de"
+"17.1 PACKSTÜCKE
+17.1a Art der Packstücke
+17.1b Anzahl der Packstücke
+17.1c Kennzeichen des Verschlusses
+BO - Flasche, ungeschützt, zylindrisch
+24"
+"17 POSITIONSDATEN e-VD/v-e-VD
+17a Positionsnummer
+17b Verbrauchsteuer-Produktcode
+17c KN-Code
+17d Menge
+Mengeneinheit
+43
+W200
+22042178
+9,000
+Liter (bei 20°C)
+17e Bruttomasse
+17f Nettomasse
+17g Alkoholgehalt
+17h Grad Plato
+17o Dichte
+16,800000
+9,000000
+13,00"
+"17p Warenbeschreibung
+17q
+ROSEWEIN CHATEAU D'ESCLANS WHI, SPERING ANGEL 2024 0,75L, 1111173
+de"
+"17.1 PACKSTÜCKE
+17.1a Art der Packstücke
+17.1b Anzahl der Packstücke
+17.1c Kennzeichen des Verschlusses
+BO - Flasche, ungeschützt, zylindrisch
+12"
+"17 POSITIONSDATEN e-VD/v-e-VD
+17a Positionsnummer
+17b Verbrauchsteuer-Produktcode
+17c KN-Code
+17d Menge
+Mengeneinheit
+44
+W200
+22042178
+9,000
+Liter (bei 20°C)
+17e Bruttomasse
+17f Nettomasse
+17g Alkoholgehalt
+17h Grad Plato
+17o Dichte
+17,480000
+9,000000
+12,50
+17p Warenbeschreibung
+17q
+ROSEWEIN MINUTY 281 2024 0,75L, , 1111809
+de"
+"17.1 PACKSTÜCKE
+17.1a Art der Packstücke
+17.1b Anzahl der Packstücke
+17.1c Kennzeichen des Verschlusses
+BO - Flasche, ungeschützt, zylindrisch
+12"
+"17 POSITIONSDATEN e-VD/v-e-VD
+17a Positionsnummer
+17b Verbrauchsteuer-Produktcode
+17c KN-Code
+17d Menge
+Mengeneinheit
+45
+W200
+22042178
+18,000
+Liter (bei 20°C)
+17e Bruttomasse
+17f Nettomasse
+17g Alkoholgehalt
+17h Grad Plato
+17o Dichte
+34,080000
+18,000000
+13,00
+17p Warenbeschreibung
+17q
+ROSEWEIN MINUTY M ELLIOTT EDIT, ION 1,5L 2024, 1112223
+de"
+"17.1 PACKSTÜCKE
+17.1a Art der Packstücke
+17.1b Anzahl der Packstücke
+17.1c Kennzeichen des Verschlusses
+BO - Flasche, ungeschützt, zylindrisch
+12"

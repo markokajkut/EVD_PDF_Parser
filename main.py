@@ -21,6 +21,9 @@ PASSWORD = st.secrets['authentication']['password']
 if "authenticated" not in st.session_state:
     st.session_state.authenticated = False
 
+if "df_to_show" not in st.session_state:
+    st.session_state.df_to_show = None
+
 if not st.session_state.authenticated:
     st.sidebar.subheader("Login")
     username = st.sidebar.text_input("Username")
@@ -57,16 +60,16 @@ else:
             articles = parse_articles(raw_text)
             # Create dataframe from the data
             clean_df = load_and_flatten(articles)
-
+            st.session_state.df_to_show = clean_df
             # read_and_store_to_csv(uploaded_pdf, 'combined_table_test.csv')
             # positions_dict = parse_csv_to_dict('combined_table_test.csv')
             # clean_df = load_and_flatten(positions_dict)
 
     st.subheader("Extracted DataFrame")
-    if clean_df is not None:
-        st.dataframe(clean_df, width='stretch')
+    if st.session_state.df_to_show is not None:
+        st.dataframe(st.session_state.df_to_show, width='stretch')
         # Excel download
-        excel_bytes = dataframe_to_excel_bytes(clean_df)
+        excel_bytes = dataframe_to_excel_bytes(st.session_state.df_to_show)
         with st.columns(8)[7]:
             st.download_button(
                 label="📥 Download Excel",
@@ -79,4 +82,7 @@ else:
         st.write("No data loaded")
 
     logout = st.sidebar.button("Logout", type="primary")
+    if logout:
+        st.session_state.authenticated = False
+        st.rerun()
 
