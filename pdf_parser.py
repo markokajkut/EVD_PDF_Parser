@@ -167,14 +167,74 @@ def load_and_flatten(records: List[Dict]) -> pd.DataFrame:
     df = pd.DataFrame(flat_records)
     return df
 
+def process_dataframe(df: pd.DataFrame) -> pd.DataFrame:
+    cols_to_fix = ["Menge", "Bruttomasse", "Nettomasse", "Alkoholgehalt"]
+    for col in cols_to_fix:
+        df[col] = df[col].astype(str).str.replace(",", ".", regex=False).astype(float)
+
+    df["Positionsnummer"] = df["Positionsnummer"].astype(int)
+    df["Anzahl der Packstücke"] = df["Anzahl der Packstücke"].astype(int)
+
+    df = df.rename(columns={
+        "Verbrauchsteuer-Produktcode": "Produktcode"
+    })
+    return df
+
+
 
 def dataframe_to_excel_bytes(df: pd.DataFrame) -> bytes:
     """
     Convert a pandas DataFrame into an Excel file (bytes object).
     """
+    # output = BytesIO()
+    # with pd.ExcelWriter(output, engine="xlsxwriter") as writer:
+    #     df.to_excel(writer, index=False, sheet_name="Sheet1")
+    # return output.getvalue()
+
+    cols_to_compute_total = ["Menge", "Bruttomasse", "Nettomasse", "Anzahl der Packstücke"]
+
     output = BytesIO()
     with pd.ExcelWriter(output, engine="xlsxwriter") as writer:
-        df.to_excel(writer, index=False, sheet_name="Sheet1")
+        workbook = writer.book
+        bold_format = workbook.add_format({"bold": True, "bg_color": "#D9E1F2"})
+        num_format = workbook.add_format({"num_format": "#,##0.00"})  # 2 decimals
+
+        def write_with_totals(dataframe: pd.DataFrame, sheet_name: str):
+            """Helper to write dataframe + totals row with formatting"""
+            df_copy = dataframe.copy()
+
+            # Compute totals
+            totals = df_copy[cols_to_compute_total].sum().to_dict()
+            totals_row = {col: totals.get(col, "") for col in cols_to_compute_total}
+            totals_row.update({c: "" for c in df_copy.columns if c not in cols_to_compute_total})
+            totals_row["Produktcode"] = "TOTAL"
+
+            # Append totals row
+            df_copy = pd.concat([df_copy, pd.DataFrame([totals_row])], ignore_index=True)
+
+            # Write data
+            df_copy.to_excel(writer, index=False, sheet_name=sheet_name)
+
+            # Apply formatting
+            worksheet = writer.sheets[sheet_name]
+            total_row_idx = len(df_copy)  # Excel row index is 1-based because of header
+
+            # Bold + highlight total row
+            worksheet.set_row(total_row_idx, None, bold_format)
+
+            # Format numeric columns
+            for col_idx, col_name in enumerate(df_copy.columns):
+                if col_name in cols_to_compute_total:
+                    worksheet.set_column(col_idx, col_idx, 15, num_format)
+
+        # First sheet = All records
+        write_with_totals(df, "All")
+
+        # Separate sheets per Produktcode
+        for produktcode, group in df.groupby("Produktcode"):
+            sheet_name = str(produktcode)[:31]  # Excel sheet names max 31 chars
+            write_with_totals(group, sheet_name)
+
     return output.getvalue()
 
 

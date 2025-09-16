@@ -1,4 +1,5 @@
 import streamlit as st
+import os
 import time
 import warnings
 from pathlib import Path
@@ -60,7 +61,18 @@ else:
             articles = parse_articles(raw_text)
             # Create dataframe from the data
             clean_df = load_and_flatten(articles)
+            # Process dataframe
+            clean_df = process_dataframe(clean_df)
             st.session_state.df_to_show = clean_df
+
+            files_to_delete = ['parsed_pdf.csv', 'parsed_pdf_modified.csv']
+            for file in files_to_delete:
+                if os.path.exists(file):  # check if file exists
+                    os.remove(file)
+                    print(f"File {file} deleted successfully")
+                else:
+                    print(f"File {file} not found")
+
             # read_and_store_to_csv(uploaded_pdf, 'combined_table_test.csv')
             # positions_dict = parse_csv_to_dict('combined_table_test.csv')
             # clean_df = load_and_flatten(positions_dict)
