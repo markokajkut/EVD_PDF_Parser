@@ -55,10 +55,12 @@ else:
             # Parse PDF with Camelot
             read_and_store_to_csv(uploaded_pdf, 'parsed_pdf.csv')
             # Modify CSV for better parsing
-            prefix_mengeneinheit('parsed_pdf.csv', 'parsed_pdf_modified.csv')
+            modify_csv('parsed_pdf.csv', 'parsed_pdf_modified.csv')
             # Structure to dictionary
             raw_text = Path('parsed_pdf_modified.csv').read_text(encoding="utf-8")
             articles = parse_articles(raw_text)
+            # Clean of unmapped values
+            articles = [{k: v for k, v in d.items() if k != "_UNMAPPED_VALUES"} for d in articles]
             # Create dataframe from the data
             clean_df = load_and_flatten(articles)
             # Process dataframe

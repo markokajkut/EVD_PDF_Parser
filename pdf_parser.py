@@ -24,10 +24,11 @@ def read_and_store_to_csv(pdf_file_path: str, csv_file_path: str = 'combined_tab
     # Optionally, save to CSV
     combined_df.to_csv(csv_file_path, index=False)
 
-def prefix_mengeneinheit(input_csv: str = 'combined_table.csv', output_csv: str = 'combined_table_modified.csv'):
+def modify_csv(input_csv: str = 'combined_table.csv', output_csv: str = 'combined_table_modified.csv'):
     """
-    Reads a CSV file, and if a line starts with 'Mengeneinheit',
-    it prefixes it with '17w ' and writes the result to a new CSV file.
+    Reads a CSV file, modifies it by:
+      1. Prefixing lines that start with 'Mengeneinheit' with '17w '
+      2. Removing everything starting from '18 DOKUMENT – ZERTIFIKAT' (inclusive)
 
     :param input_csv: Path to the input CSV file
     :param output_csv: Path to the output CSV file
@@ -36,6 +37,12 @@ def prefix_mengeneinheit(input_csv: str = 'combined_table.csv', output_csv: str 
         for line in infile:
             # Strip only trailing newline for checking
             stripped = line.lstrip()
+
+            # If we hit the Dokument section, stop writing completely
+            if stripped.startswith('"18 DOKUMENT – ZERTIFIKAT'):
+                break
+            
+            # If line starts with Mengeneinheit, prefix it
             if stripped.startswith("Mengeneinheit"):
                 outfile.write("17w " + stripped)
             else:
@@ -157,6 +164,7 @@ def load_and_flatten(records: List[Dict]) -> pd.DataFrame:
 
     for record in records:
         flat_record = {}
+
         for section_dict in record.values():
             for key, value in section_dict.items():
                 # Combine section and key to make unique column name

@@ -3,3 +3,6 @@ examples
 pdf-extractor-venv
 testing.ipynb
 .streamlit
+parsed_articles.json
+combined_table.csv
+combined_table_modified.csv
