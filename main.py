@@ -1,10 +1,7 @@
 import streamlit as st
 import os
-import time
 import warnings
 from pathlib import Path
-from io import BytesIO
-from typing import List, Dict
 from pdf_parser import *
 
 warnings.filterwarnings(
@@ -53,9 +50,16 @@ else:
             
             # Parsing part
             # Parse PDF with Camelot
-            read_and_store_to_csv(uploaded_pdf, 'parsed_pdf.csv')
-            # Modify CSV for better parsing
+            number_of_camelot_tables = read_and_store_to_csv(uploaded_pdf, 'parsed_pdf.csv')
+            # If Camelot failed to parse page, count number of pages
+            number_of_pages = check_number_of_pages(uploaded_pdf)
+            # If number of pages greater than the number Camelot counted, apply Camelot stream logic, and append to raw csv
+            if number_of_pages > number_of_camelot_tables:
+                append_camelot_missing_to_csv(uploaded_pdf, number_of_pages, 'parsed_pdf.csv')
+
+            # Apply CSV modification afterwards
             modify_csv('parsed_pdf.csv', 'parsed_pdf_modified.csv')
+
             # Structure to dictionary
             raw_text = Path('parsed_pdf_modified.csv').read_text(encoding="utf-8")
             articles = parse_articles(raw_text)
@@ -75,9 +79,6 @@ else:
                 else:
                     print(f"File {file} not found")
 
-            # read_and_store_to_csv(uploaded_pdf, 'combined_table_test.csv')
-            # positions_dict = parse_csv_to_dict('combined_table_test.csv')
-            # clean_df = load_and_flatten(positions_dict)
 
     st.subheader("Extracted DataFrame")
     if st.session_state.df_to_show is not None:
