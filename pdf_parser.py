@@ -223,6 +223,8 @@ def process_dataframe(df: pd.DataFrame) -> pd.DataFrame:
 
     df["Positionsnummer"] = df["Positionsnummer"].astype(int)
     df["Anzahl der Packstücke"] = df["Anzahl der Packstücke"].astype(int)
+    df["Alkoholmenge"] = df["Menge"] * (df["Alkoholgehalt"] / 100)
+    df["Alkoholmenge"] = df["Alkoholmenge"].round(2)
 
     df = df.rename(columns={"Verbrauchsteuer-Produktcode": "Produktcode"})
     return df
@@ -233,7 +235,7 @@ def dataframe_to_excel_bytes(df: pd.DataFrame) -> bytes:
     Convert a pandas DataFrame into an Excel file (bytes object).
     """
 
-    cols_to_compute_total = ["Menge", "Bruttomasse", "Nettomasse", "Anzahl der Packstücke"]
+    cols_to_compute_total = ["Menge", "Bruttomasse", "Nettomasse", "Anzahl der Packstücke", "Alkoholmenge"]
 
     output = BytesIO()
     with pd.ExcelWriter(output, engine="xlsxwriter") as writer:

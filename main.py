@@ -89,7 +89,7 @@ else:
             st.download_button(
                 label="📥 Download Excel",
                 data=excel_bytes,
-                file_name="extracted.xlsx",
+                file_name=uploaded_pdf.name.replace('.pdf', '.xlsx'),
                 mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
                 type="primary"
             )
