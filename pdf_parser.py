@@ -218,13 +218,17 @@ def process_dataframe(df: pd.DataFrame) -> pd.DataFrame:
             .astype(str)
             .str.replace(".", "", regex=False)   # remove thousand separators
             .str.replace(",", ".", regex=False)  # replace decimal comma
-            .astype(float)
+            .astype(float).round(3)
         )
 
     df["Positionsnummer"] = df["Positionsnummer"].astype(int)
     df["Anzahl der Packstücke"] = df["Anzahl der Packstücke"].astype(int)
     df["Alkoholmenge"] = df["Menge"] * (df["Alkoholgehalt"] / 100)
-    df["Alkoholmenge"] = df["Alkoholmenge"].round(2)
+    df["Alkoholmenge"] = df["Alkoholmenge"].round(3)
+
+    # Force display with 3 decimals
+    for col in ["Menge", "Bruttomasse", "Nettomasse", "Alkoholgehalt", "Alkoholmenge"]:
+        df[col] = df[col].map(lambda x: f"{x:.3f}")
 
     df = df.rename(columns={"Verbrauchsteuer-Produktcode": "Produktcode"})
     return df
@@ -241,7 +245,7 @@ def dataframe_to_excel_bytes(df: pd.DataFrame) -> bytes:
     with pd.ExcelWriter(output, engine="xlsxwriter") as writer:
         workbook = writer.book
         bold_format = workbook.add_format({"bold": True, "bg_color": "#D9E1F2"})
-        num_format = workbook.add_format({"num_format": "#,##0.00"})  # 2 decimals
+        num_format = workbook.add_format({"num_format": "#,##0.000"})  # 3 decimals
 
         def write_with_totals(dataframe: pd.DataFrame, sheet_name: str):
             """Helper to write dataframe + totals row with formatting"""
