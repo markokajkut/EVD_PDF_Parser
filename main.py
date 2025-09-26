@@ -1,8 +1,11 @@
 import streamlit as st
+import pandas as pd
 import os
 import warnings
 from pathlib import Path
 from pdf_parser import *
+
+pd.options.display.float_format = "{:.3f}".format
 
 warnings.filterwarnings(
     "ignore",

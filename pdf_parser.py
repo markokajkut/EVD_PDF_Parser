@@ -202,8 +202,6 @@ def load_and_flatten(records: List[Dict]) -> pd.DataFrame:
 
         for section_dict in record.values():
             for key, value in section_dict.items():
-                # Combine section and key to make unique column name
-                #col_name = f"{section_name}_{key}"
                 flat_record[key] = value
         flat_records.append(flat_record)
 
@@ -218,17 +216,13 @@ def process_dataframe(df: pd.DataFrame) -> pd.DataFrame:
             .astype(str)
             .str.replace(".", "", regex=False)   # remove thousand separators
             .str.replace(",", ".", regex=False)  # replace decimal comma
-            .astype(float).round(3)
+            .astype(float)
         )
 
     df["Positionsnummer"] = df["Positionsnummer"].astype(int)
     df["Anzahl der Packstücke"] = df["Anzahl der Packstücke"].astype(int)
     df["Alkoholmenge"] = df["Menge"] * (df["Alkoholgehalt"] / 100)
-    df["Alkoholmenge"] = df["Alkoholmenge"].round(3)
-
-    # Force display with 3 decimals
-    for col in ["Menge", "Bruttomasse", "Nettomasse", "Alkoholgehalt", "Alkoholmenge"]:
-        df[col] = df[col].map(lambda x: f"{x:.3f}")
+    df["Alkoholmenge"] = df["Alkoholmenge"]
 
     df = df.rename(columns={"Verbrauchsteuer-Produktcode": "Produktcode"})
     return df
@@ -239,13 +233,13 @@ def dataframe_to_excel_bytes(df: pd.DataFrame) -> bytes:
     Convert a pandas DataFrame into an Excel file (bytes object).
     """
 
-    cols_to_compute_total = ["Menge", "Bruttomasse", "Nettomasse", "Anzahl der Packstücke", "Alkoholmenge"]
+    cols_to_compute_total = ["Menge", "Bruttomasse", "Nettomasse", "Anzahl der Packstücke", "Alkoholmenge", "Alkoholgehalt"]
 
     output = BytesIO()
     with pd.ExcelWriter(output, engine="xlsxwriter") as writer:
         workbook = writer.book
-        bold_format = workbook.add_format({"bold": True, "bg_color": "#D9E1F2"})
-        num_format = workbook.add_format({"num_format": "#,##0.000"})  # 3 decimals
+        bold_format = workbook.add_format({"bold": True, "bg_color": "#D9E1F2", "num_format": "###0.000"})
+        num_format = workbook.add_format({"num_format": "###0.000"})  # 3 decimals
 
         def write_with_totals(dataframe: pd.DataFrame, sheet_name: str):
             """Helper to write dataframe + totals row with formatting"""
@@ -254,8 +248,15 @@ def dataframe_to_excel_bytes(df: pd.DataFrame) -> bytes:
             # Compute totals
             totals = df_copy[cols_to_compute_total].sum().to_dict()
             totals_row = {col: totals.get(col, "") for col in cols_to_compute_total}
+
+            # Force integer total for Anzahl der Packstücke
+            if "Anzahl der Packstücke" in totals_row and totals_row["Anzahl der Packstücke"] != "":
+                totals_row["Anzahl der Packstücke"] = int(totals_row["Anzahl der Packstücke"])
+
             totals_row.update({c: "" for c in df_copy.columns if c not in cols_to_compute_total})
             totals_row["Produktcode"] = "TOTAL"
+            totals_row["Alkoholgehalt"] = ""
+
 
             # Append totals row
             df_copy = pd.concat([df_copy, pd.DataFrame([totals_row])], ignore_index=True)
@@ -267,13 +268,28 @@ def dataframe_to_excel_bytes(df: pd.DataFrame) -> bytes:
             worksheet = writer.sheets[sheet_name]
             total_row_idx = len(df_copy)  # Excel row index is 1-based because of header
 
+            # Anzahl der Packstücke in TOTAL format
+            anzahl_total_format = workbook.add_format({"bold": True, "bg_color": "#D9E1F2", "num_format": "###0"})
+            anzahl_col_idx = df_copy.columns.get_loc("Anzahl der Packstücke")  # zero-based index
+            # Get the value from df_copy
+            anzahl_total_value = df_copy.iloc[-1, anzahl_col_idx]
+
             # Bold + highlight total row
             worksheet.set_row(total_row_idx, None, bold_format)
 
             # Format numeric columns
             for col_idx, col_name in enumerate(df_copy.columns):
                 if col_name in cols_to_compute_total:
-                    worksheet.set_column(col_idx, col_idx, 15, num_format)
+                    if col_name == "Anzahl der Packstücke":
+                        # Integer format for this column
+                        int_format = workbook.add_format({"num_format": "###0"})
+                        worksheet.set_column(col_idx, col_idx, 15, int_format)
+                        df_copy[col_name, len(df_copy)] = df_copy[col_name].astype(int)
+                    else:
+                        worksheet.set_column(col_idx, col_idx, 15, num_format)
+
+            # Overwrite just that one cell with correct format
+            worksheet.write(total_row_idx, anzahl_col_idx, anzahl_total_value, anzahl_total_format)
 
         # First sheet = All records
         write_with_totals(df, "All")
